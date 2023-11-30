@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'PP Neue Regular';
+  src: url('./assests/fonts/ppneue.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* variables  */
+
+:root {
+  --font-primary: 'PP Neue Regular', sans-serif;
+
+  --color-primary: #1f1f1f;
+  --color-secondary: #ffffff;
+
+  --color-background--light: #ffffff;
+  --color-background--beige: #f4f3f1;
+  --color-background--dark: #1f1f1f;
+
+  --color-button--dark: #1f1f1f;
+  --color-button--dark--hover: #1f1f1f;
+
+  --color-button--light: #ffffff;
+  --color-button--light--hover: #737373;
+
+  --color-button-text--dark: #1f1f1f;
+  --color-button-text--light: #ffffff;
+
+  --color-text--dark: #1f1f1f;
+  --color-text--light: #aaaaaa;
+  --color-text--white: #ffffff;
+
+  --desktop-width: 1440;
+  --mobile-width: 430;
+}
+
+/* variables  */
+
+/* Button  */
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 14px 24px;
+  border-radius: 10000px;
+  width: max-content;
+  height: max-content;
+
+  &[data-animation='button'] {
+    transform: scale(0);
+    transform-origin: 50% 50%;
+
+    > span {
+      display: inline-block;
+      width: 0px;
+      overflow: hidden;
+    }
+
+    > span span {
+      display: inline-block;
+      transform: translateY(16px);
+      white-space: nowrap;
+    }
+
+    svg {
+      width: 0px;
+      overflow: hidden;
+      transform: translateX(-8px);
+      opacity: 0;
+    }
+  }
+}
+
+.button_dark {
+    background-color: var(--color-button--dark);
+    color: var(--color-button-text--light);
+}
+
+.button_light{
+    background-color: var(--color-button--light);
+    color: var(--color-button-text--dark);
+
+    & svg path {
+      fill: var(--color-button-text--dark);
+    }
+}
+
+
+/* Button  */
+
+[data-animation='text-reveal'] div {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+[data-animation='text-reveal'] div div {
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+.word{
+  display: inline-block;
+}
+
+.container {
+  max-width: 150rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+/* typography  */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1{
+  font-size:4.5rem;
+  margin-bottom: 64px;
+  line-height: 1.3;
+
+}
+
+h2{
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+/* h1,
+.h1 {
+  @include fluid-type(430px, 1440px, 32px, 48px);
+  margin-bottom: 64px;
+  line-height: 1.3;
+}
+
+h2,
+.h2 {
+  @include fluid-type(430px, 1440px, 24px, 40px);
+  line-height: 1.2;
+  margin-bottom: 40px;
+} */
+/* typography  */
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: var(--font-primary);
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px  */
+  }
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul,
+ol {
+  margin-left: 1em;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+/* Box sizing rules */
+
+
+/* Make images easier to work with */
+img,
+picture {
+  width: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+input[type='email'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  color: var(--color-text--dark);
+  font-size: 16px;
+  width: 100%;
+  min-height: 24px;
+  min-width: 200px;
+  position: relative;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.section_medium_margin{
+  margin-top:16rem;
+  margin-bottom:16rem;
+}
+
+.section_small_padding{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+

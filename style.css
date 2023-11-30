@@ -1,0 +1,364 @@
+@import url(./utilies.css);
+@import url(./mobile_respo.css);
+
+/* <!-- HEADER START -->  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+
+  & .header_logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.85px;
+  }
+
+  & .header__hamburger {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+
+    & .line {
+      width: 2.4rem;
+      height: 1.5px;
+      background-color: var(--color-primary);
+    }
+  }
+}
+/* <!-- HEADER START -->  */
+
+/* <!-- HERO SECTION START  -->  */
+.hero {
+  & .hero_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 160ch;
+    margin-inline: auto;
+    text-align: center;
+
+    & .hero_title {
+      color: var(--color-text--light);
+
+      & span {
+        color: var(--color-text--dark);
+      }
+    }
+  }
+
+  & .hero_image {
+    position: relative;
+
+    & .hero_play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      cursor: pointer;
+      color: var(--color-text--white);
+      z-index: 2;
+
+      & .hero_play_text {
+        font-size: 2.4rem;
+      }
+    }
+
+    & .hero_images {
+      aspect-ratio: 16/9;
+    }
+  }
+}
+/* <!-- HERO SECTION END  --> */
+
+/* <!-- ABOUT SECTION START  --> */
+.text_columns {
+  display: flex;
+  justify-content: space-between;
+
+  & .text_columns_inside {
+    display: flex;
+    gap: 35rem;
+    & p {
+      max-width: 52rem;
+    }
+  }
+}
+/* <!-- ABOUT SECTION END  --> */
+
+/* <!-- PROJECT SECTION START  -->  */
+.section_beige {
+  background-color: var(--color-background--beige);
+
+  & .projects {
+    display: flex;
+    gap: 4rem;
+
+    & .projects_left {
+      width: 50%;
+      height: 100%;
+
+      & img {
+        height: 100%;
+      }
+    }
+
+    & .projects_right {
+      margin-top: 16rem;
+      margin-bottom: 16rem;
+      width: 50%;
+
+      & .projects_content {
+        max-width: 75ch;
+
+        & .projects_text {
+          margin-bottom: 4.8rem;
+        }
+
+        & .projects_heading {
+          font-size: 4.8rem;
+        }
+      }
+    }
+  }
+}
+/* <!-- PROJECT SECTION END  -->  */
+
+/* <!-- SEE_OUR_TALKS_SECTION START  --> */
+
+.list {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 4.8rem;
+
+  & .list_item {
+    position: relative;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-primary);
+
+    & .col-6--span-5,
+    & .col-11--span-2 {
+      flex: 1;
+    }
+
+    & .col-1--span-5 {
+      flex: 1.8;
+    }
+
+    & .col-11--span-2 {
+      text-align: right;
+    }
+
+    &:nth-child(1) {
+      border-top: 1px solid var(--color-primary);
+    }
+
+    & span,
+    & time {
+      font-size: 1.6rem;
+    }
+  }
+}
+/* <!-- SEE_OUR_TALKS_SECTION START  --> */
+
+/* <!-- Join_The_Studio START -->  */
+.section_dark {
+  background-color: var(--color-background--dark);
+  color: var(--color-text--white);
+}
+/* <!-- Join_The_Studio END -->  */
+
+/* <!-- Join_The_Studio START -->  */
+.company_content {
+  display: flex;
+  justify-content: space-between;
+
+  & .company_para {
+    max-width: 50ch;
+  }
+}
+/* <!-- Join_The_Studio END -->  */
+
+/* <!-- IMAGE SECTION START  -->  */
+.image-grid {
+  display: flex;
+  gap: 2.4rem;
+
+  & img {
+    aspect-ratio: 5/7;
+  }
+}
+/* <!-- IMAGE SECTION END  -->  */
+
+/* <!-- FOOTER_SECTION START  -->  */
+.footer_section {
+  padding: 4.8rem 0;
+
+  & .footer {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+
+    & .footer_logo {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 0.85px;
+    }
+
+    & .footer_btn {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer_social_media {
+  background-color: var(--color-background--dark);
+  position: relative;
+  padding: 6rem 0;
+}
+
+.footer_social_media_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  border-top: 0.1px solid white;
+  border-bottom: 0.05px solid white;
+  padding: 6rem 3rem;
+  position: relative;
+}
+
+
+.social_media_white_text_scroll {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  background-color: var(--color-background--beige);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: hidden;
+  transition: all ease 0.5s;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.social_media_scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  list-style: 0.85px;
+}
+
+.social_media_scroll_inner{
+  display: flex;
+  gap: 5rem;
+}
+
+.social_media_scroll_in_1 {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  white-space: nowrap;
+animation: scroll1 25s linear infinite;
+}
+
+.social_icon {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  list-style: 0.85px;
+  color: var(--color-text--white);
+  /* z-index: 2; */
+  transition: all ease 0.5s;
+}
+
+@keyframes scroll1 {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.footer_social_media_inner:hover .social_media_white_text_scroll {
+  height: 100%;
+  /* color: var(--color-text--dark) !important; */
+}
+/* .footer_social_media_inner:hover .social_icon  {
+  color: var(--color-text--dark) !important;
+} */
+
+.footer_contact_text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_contact {
+  padding: 6rem 0;
+}
+
+.footer_contact_right {
+  display: flex;
+  gap: 15.6rem;
+
+  & .footer_right {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+    line-height: 1.6;
+  }
+}
+
+.footer_contact_left {
+  width: 30%;
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+
+  & .mg-footer-title {
+    font-size: 2.4rem;
+  }
+
+  & .footer_input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+  }
+
+  & .footer_input input {
+    padding: 1rem 3rem 1rem 0;
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    transition: border 0.4s;
+  }
+}
+
+.footer-copyright {
+  font-size: 1.6rem;
+  padding: 6rem;
+}
+
+/* <!-- FOOTER_SECTION START  -->  */

@@ -1,0 +1,126 @@
+/* 439PX MEIDA  */
+@media (max-width: 439px){
+
+    h1{
+        font-size: 3.2rem;
+    }
+
+    .hero_play_text{
+        font-size:1.6rem !important;
+    }
+
+    .text_columns{
+        text-align: center;
+        flex-direction: column;
+
+        & .text_columns_inside{
+
+            gap: 5rem !important;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* <!-- PROJECT SECTION START  -->  */
+    .projects{
+        flex-direction: column;
+        gap: 0 !important;
+
+        & .projects_left, & .projects_right{
+            width: 100% !important;
+        }
+    }
+
+    /* <!-- PROJECT SECTION END  -->  */
+
+    .list_item{
+        flex-direction: column;
+        padding: 12px 0;
+
+        & span{
+            line-height: 2.5rem;
+        }
+
+        & .col-11--span-2{
+            text-align: left !important;
+          }
+    }
+
+    .company_content{
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    /* FOOTER  */
+  .footer_menu{
+        &:nth-child(3){
+          margin-right: 0 !important;
+        }
+
+        & li{
+            padding: 0 !important;
+        }
+    }
+
+    .footer_bottom{
+        flex-direction: column;
+
+        & a{
+            line-height: 1.5rem;
+            padding: 8px;
+        }
+    }
+
+    .footer_social_media_inner{
+        height: 0 !important;
+    }
+
+    .footer_contact_text{
+        flex-direction: column;
+        gap: 5rem;
+
+        & .footer_contact_right{
+            gap: 0;
+            justify-content: space-between;
+        }
+
+        & .footer_contact_left{
+            width: 100%;
+        }
+    }
+    /* FOOTER  */
+
+/* 376PX MEDIA  */
+@media (max-width: 376px){
+    h1{
+        font-size: 2.8rem;
+    }
+}
+
+/* 329PX MEDIA  */
+@media (max-width: 329px){
+    h1{
+        font-size: 2.4rem;
+    }
+
+    .projects_heading{
+        font-size: 3.4rem !important;
+    }
+
+    .company h2{
+        font-size: 2.8rem;
+    }
+
+    .footer_logo{
+        font-size: 1.5rem !important;
+    }
+
+    .footer_menu{
+        font-size: 1rem !important;
+    }
+
+    .footer_bottom a{
+        font-size: 1rem !important;
+    }
+}
+}
